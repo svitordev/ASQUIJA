@@ -16,19 +16,28 @@ module.exports = {
         },
         colors:{
             primary: {
-                1: '#b69c74',
-                2: '#201c14',
+                1: '#F98226',
+                2: '#2E0000',
             },
             secundary: {
-                1: '#1f3d22',
-                2: '#132615',
+              1: '#E8DFD2',
+              2: '#F4E5BB',
+              3: '#CDB89F',
+              4:'#3B3425'
             },
             terciary: {
-                1: '#faf8e8',
-                2: '#f5efc3',
+                1: '#0C8F5B',
+                2: '#0D3B29',
             },
         }
       },
+      screens: {
+      'md': '768px',    // tablets
+      'lg': '1024px',   // notebooks
+      'xl': '1280px',   // desktops
+      '2xl': '1440px',  // telas grandes
+      '3xl': '1850px',  // full HD e acima
+    },
     },
     plugins: [],
   }

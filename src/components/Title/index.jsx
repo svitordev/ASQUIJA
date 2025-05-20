@@ -1,11 +1,11 @@
 import React from 'react'
 
-export const Title = ({center, children}) => {
+export const Title = ({children, center}) => {
   return (
-    <div className={`flex-col ${center && ("items-center")} flex`}>
-        <h1 className='text-2xl text-natureza-900 font-bold font-serif leading-none'>{children}</h1>
+    <div className={`flex-col ${center && ("items-center text-center")} inline-flex w-full`}>
+        <h1 className='text-xl md:text-2xl text-primary-2 font-bold font-serif leading-none'>{children}</h1>
         {children && (
-            <div className='w-12 h-1 rounded-full bg-natureza-500'></div>
+            <div className='w-16 md:w-20 h-1 rounded-full bg-terciary-1'></div>
         )}
     </div>
     

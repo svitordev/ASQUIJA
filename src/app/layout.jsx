@@ -1,6 +1,5 @@
 import { Poppins, Merriweather  } from "next/font/google";
 import "../styles/globals.css";
-import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 
 const poppins = Poppins({
@@ -27,9 +26,11 @@ export default function RootLayout({ children }) {
       <body
         className={`${poppins.variable} ${merriweather.variable} antialiased bg-white`}
       >
-        <Header />
-        <main className="flex-grow">{children}</main>
+        <div className="min-h-full flex flex-col">
+          <main className="flex-grow flex-1">{children}</main>
         <Footer />
+        </div>
+        
       </body>
     </html>
   );

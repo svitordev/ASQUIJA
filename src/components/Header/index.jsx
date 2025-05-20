@@ -1,35 +1,44 @@
-"use client"
-import { Menu, X } from 'lucide-react';
-import React, { useState } from 'react'
-import { MobileMenu } from './Menu/mobileMenu';
-import { MenuPlus } from './Menu/menu';
+"use client";
+import { Menu, X } from "lucide-react";
+import React, { useState } from "react";
+import { MobileMenu } from "./Menu/mobileMenu";
+import { MenuPlus } from "./Menu/menu";
+import Link from "next/link";
+import Image from "next/image";
 
-export const Header = () => {
+export const Header = ({children}) => {
   const [menuMobile, setMenuMobile] = useState(false);
   const menuIsOpen = () => setMenuMobile(true);
   const menuIsClose = () => setMenuMobile(false);
   return (
-    <header className='bg-white py-3 flex justify-between items-center px-3'>
-      <div className='items-center inline-flex gap-2'>
-        <div className='w-11 h-11 rounded-full bg-natureza-700'></div>
-        <h1 className='text-2xl font-extrabold font-sans text-neutral-800'>AGROSLAF</h1>
-      </div>
-      <div className="relative">
+    <header className="py-3 flex justify-between items-center px-3 md:px-8 lg:px-12 xl:px-24 2xl:px-32 3xl:px-48  bg-primary-2 sticky top-0 z-50">
+      <Link className="items-center inline-flex gap-2" href="/">
+        <Image
+          width={1000}
+          height={100}
+          quality={100}
+          className="w-10 md:w-12"
+          src="/structure/logo.png"
+          alt=""
+        />
+        <h1 className="text-2xl md:text-3xl font-extrabold font-sans text-secundary-2">
+          ASQUIJA
+        </h1>
+      </Link>
+
+      <div className="relative text-sm">
         {!menuMobile ? (
           <div onClick={menuIsOpen} className="md:hidden  cursor-pointer p-2 ">
-            <Menu className='text-natureza-800 size-8' />
+            <Menu className="text-secundary-2 size-8" />
           </div>
         ) : (
-          <div onClick={menuIsClose} className="md:hidden  cursor-pointer p-2 ">
-            <X className='text-natureza-800 size-8' />
+          <div onClick={menuIsClose} className="md:hidden cursor-pointer p-2">
+            <X className="text-secundary-2 size-8" />
           </div>
         )}
-        {menuMobile && (
-          <MobileMenu />
-        )}
-        <MenuPlus />
+        {menuMobile && <MobileMenu>{children}</MobileMenu>}
+        <MenuPlus>{children}</MenuPlus>
       </div>
-      
     </header>
-  )
-}
+  );
+};
