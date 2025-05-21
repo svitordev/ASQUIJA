@@ -61,7 +61,7 @@ export default function About() {
                 famílias quilombolas da região. O que começou com encontros
                 entre moradores se transformou em uma organização reconhecida
                 pela sua luta e compromisso com a justiça social e o legado
-                ancestral.
+                ancestral...
               </p>
               <Image
                 className="w-full rounded-md hover:scale-105 transition-transform duration-300 ease-in-out object-cover"
