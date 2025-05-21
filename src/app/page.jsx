@@ -99,21 +99,21 @@ export default function Home() {
           <div className="flex flex-col md:grid md:grid-cols-3 gap-4 md:gap-3">
             <New
               link="https://lucide.dev/icons/calendar"
-              srcImg="/structure/bgQuilombola.webP"
+              srcImg="/structure/bgQuilombola.webp"
               title="Nova Lei Beneficia Quilombolas"
               date="04 de abril de 2025"
               resume="Aprovada lei que garante novos direitos às comunidades quilombolas em todo o país."
             />
             <New
               link="https://lucide.dev/icons/calendar"
-              srcImg="/structure/bgQuilombola.webP"
+              srcImg="/structure/bgQuilombola.webp"
               title="Nova Lei Beneficia Quilombolas"
               date="04 de abril de 2025"
               resume="Aprovada lei que garante novos direitos às comunidades quilombolas em todo o país."
             />
             <New
               link="https://lucide.dev/icons/calendar"
-              srcImg="/structure/bgQuilombola.webP"
+              srcImg="/structure/bgQuilombola.webp"
               title="Nova Lei Beneficia Quilombolas"
               date="04 de abril de 2025"
               resume="Aprovada lei que garante novos direitos às comunidades quilombolas em todo o país."
@@ -137,7 +137,7 @@ export default function Home() {
           <div className="flex flex-col md:grid md:grid-cols-2 gap-4  md:gap-3 w-full">
             <Event
               link="https://lucide.dev/icons/calendar"
-              srcImg="/structure/bgQuilombola.webP"
+              srcImg="/structure/bgQuilombola.webp"
               title="Workshop de Práticas Sustentáveis"
               date="04 de abril de 2025"
               hours="09:00"
@@ -145,7 +145,7 @@ export default function Home() {
             />
             <Event
               link="https://lucide.dev/icons/calendar"
-              srcImg="/structure/bgQuilombola.webP"
+              srcImg="/structure/bgQuilombola.webp"
               title="Workshop de Práticas Sustentáveis"
               date="04 de abril de 2025"
               hours="09:00"

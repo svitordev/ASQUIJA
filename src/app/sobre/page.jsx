@@ -68,7 +68,7 @@ export default function About() {
                 quality={100}
                 width={1000}
                 height={100}
-                src={"/structure/bgQuilombola.webP"}
+                src={"/structure/bgQuilombola.webp"}
                 alt=""
               />
               <p>
@@ -82,7 +82,7 @@ export default function About() {
                 quality={100}
                 width={1000}
                 height={100}
-                src={"/structure/bgQuilombola.webP"}
+                src={"/structure/bgQuilombola.webp"}
                 alt=""
               />
               <p>
@@ -134,7 +134,7 @@ export default function About() {
               quality={100}
               width={1000}
               height={100}
-              src={"/structure/bgQuilombola.webP"}
+              src={"/structure/bgQuilombola.webp"}
               alt=""
             />
             <Image
@@ -142,7 +142,7 @@ export default function About() {
               quality={100}
               width={1000}
               height={100}
-              src={"/structure/bgQuilombola.webP"}
+              src={"/structure/bgQuilombola.webp"}
               alt=""
             />
           </div>
