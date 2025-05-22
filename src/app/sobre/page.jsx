@@ -4,6 +4,8 @@ import { Title } from "@/components/Title";
 import { FaClockRotateLeft } from "react-icons/fa6";
 import { FiTarget } from "react-icons/fi";
 import { FaCertificate } from "react-icons/fa";
+import { IoDocumentText } from "react-icons/io5";
+
 
 import React from "react";
 import Image from "next/image";
@@ -149,7 +151,10 @@ export default function About() {
         </div>
       </section>
 
-      <section id="diretrizes" className="flex flex-col items-center justify-center space-y-10 py-12 px-3 md:px-4 lg:px-12 xl:px-24 2xl:px-32 3xl:px-56 bg-secundary-1/40">
+      <section
+        id="diretrizes"
+        className="flex flex-col items-center justify-center space-y-10 py-12 px-3 md:px-4 lg:px-12 xl:px-24 2xl:px-32 3xl:px-56 bg-secundary-1/40"
+      >
         <div className="space-y-2 w-full">
           <Title center={true}>O que nos orienta</Title>
           <Tag>
@@ -186,7 +191,29 @@ export default function About() {
         </div>
       </section>
 
-      <section id="equipe" className="space-y-14 py-12 px-2 md:px-4 lg:px-12 xl:px-24 2xl:px-32 3xl:px-56">
+      <section
+        id="estatuto"
+        className="space-y-14 py-12 px-2 md:px-4 lg:px-12 xl:px-24 2xl:px-32 3xl:px-56 text-center"
+      >
+        <div className="space-y-2 w-full">
+          <Title center={true}>Estatuto da Associação</Title>
+          <Tag>
+            <IoDocumentText /> Estatuto
+          </Tag>
+        </div>
+        <div className="flex flex-col gap-2 items-center w-full">
+        <p className="text-secundary-4 md:text-lg">Conheça as diretrizes que orientam nossas ações e compromissos. <br /> Baixe o estatuto completo da ASQUIJA abaixo:</p>
+        <a href="/structure/estatuto-asquija.pdf" className="flex items-center gap-2 px-5 py-3 bg-secundary-1 hover:bg-secundary-3 rounded-full text-primary-2" target="_blank" rel="noopener">
+        <IoDocumentText /> Baixar Estatuto
+        </a>
+
+        </div>
+      </section>
+
+      <section
+        id="equipe"
+        className="space-y-14 py-12 px-2 md:px-4 lg:px-12 xl:px-24 2xl:px-32 3xl:px-56 bg-secundary-1/40"
+      >
         <div className="flex flex-col items-center gap-2 w-full text-center">
           <Title center={true}>Conheça quem faz a diferença</Title>
           <Tag>
@@ -200,10 +227,26 @@ export default function About() {
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-0">
-          <TeamMember name="Carlos Eduardo" role="Presidente" src={"/structure/perfil.png"} />
-          <TeamMember name="Carlos Eduardo" role="Presidente" src={"/structure/perfil.png"} />
-          <TeamMember name="Carlos Eduardo" role="Presidente" src={"/structure/perfil.png"} />
-          <TeamMember name="Carlos Eduardo" role="Presidente" src={"/structure/perfil.png"} />
+          <TeamMember
+            name="Carlos Eduardo"
+            role="Presidente"
+            src={"/structure/perfil.png"}
+          />
+          <TeamMember
+            name="Carlos Eduardo"
+            role="Presidente"
+            src={"/structure/perfil.png"}
+          />
+          <TeamMember
+            name="Carlos Eduardo"
+            role="Presidente"
+            src={"/structure/perfil.png"}
+          />
+          <TeamMember
+            name="Carlos Eduardo"
+            role="Presidente"
+            src={"/structure/perfil.png"}
+          />
         </div>
       </section>
     </>
