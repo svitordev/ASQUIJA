@@ -6,7 +6,6 @@ import { FiTarget } from "react-icons/fi";
 import { FaCertificate } from "react-icons/fa";
 import { IoDocumentText } from "react-icons/io5";
 
-
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -14,6 +13,12 @@ import { BoxValues } from "@/components/BoxValues";
 import { TeamMember } from "@/components/TeamMember";
 
 export default function About() {
+  const members = [
+    { name: "Genilson Severino", role: "Diretor Geral", src: "/structure/perfil.png" },
+    { name: "Maria Clara", role: "Diretor Administrativo", src: "/structure/perfil.png" },
+    { name: "Maria Martins", role: "Diretor Financeiro", src: "/structure/perfil.png" },
+    { name: "Ruan Santos", role: "Secretário Geral", src: "/structure/perfil.png" },
+  ];
   return (
     <>
       <Header>
@@ -202,11 +207,18 @@ export default function About() {
           </Tag>
         </div>
         <div className="flex flex-col gap-2 items-center w-full">
-        <p className="text-secundary-4 md:text-lg">Conheça as diretrizes que orientam nossas ações e compromissos. <br /> Baixe o estatuto completo da ASQUIJA abaixo:</p>
-        <a href="/structure/estatuto-asquija.pdf" className="flex items-center gap-2 px-5 py-3 bg-secundary-1 hover:bg-secundary-3 rounded-full text-primary-2" target="_blank" rel="noopener">
-        <IoDocumentText /> Baixar Estatuto
-        </a>
-
+          <p className="text-secundary-4 md:text-lg">
+            Conheça as diretrizes que orientam nossas ações e compromissos.{" "}
+            <br /> Baixe o estatuto completo da ASQUIJA abaixo:
+          </p>
+          <a
+            href="/structure/estatuto-asquija.pdf"
+            className="flex items-center gap-2 px-5 py-3 bg-secundary-1 hover:bg-secundary-3 rounded-full text-primary-2"
+            target="_blank"
+            rel="noopener"
+          >
+            <IoDocumentText /> Baixar Estatuto
+          </a>
         </div>
       </section>
 
@@ -227,26 +239,9 @@ export default function About() {
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-0">
-          <TeamMember
-            name="Carlos Eduardo"
-            role="Presidente"
-            src={"/structure/perfil.png"}
-          />
-          <TeamMember
-            name="Carlos Eduardo"
-            role="Presidente"
-            src={"/structure/perfil.png"}
-          />
-          <TeamMember
-            name="Carlos Eduardo"
-            role="Presidente"
-            src={"/structure/perfil.png"}
-          />
-          <TeamMember
-            name="Carlos Eduardo"
-            role="Presidente"
-            src={"/structure/perfil.png"}
-          />
+          {members.map((member, index) => (
+            <TeamMember key={index} name={member.name} role={member.role} src={member.src}/>
+          ))}
         </div>
       </section>
     </>
