@@ -16,6 +16,7 @@ export default function Transparency() {
       </Header>
       <main id="top">
         <TopTitle>Painel da Transparência</TopTitle>
+        <section></section>
       </main>
     </>
   );
