@@ -1,6 +1,7 @@
 import { Poppins, Merriweather  } from "next/font/google";
 import "../styles/globals.css";
 import { Footer } from "@/components/Footer";
+import { BackToTopButton } from "@/components/BackToTopButton";
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -28,6 +29,7 @@ export default function RootLayout({ children }) {
       >
         <div className="min-h-full flex flex-col">
           <main className="flex-grow flex-1">{children}</main>
+          <BackToTopButton />
         <Footer />
         </div>
         

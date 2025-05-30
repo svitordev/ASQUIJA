@@ -5,23 +5,24 @@ import { MobileMenu } from "./Menu/mobileMenu";
 import { MenuPlus } from "./Menu/menu";
 import Link from "next/link";
 import Image from "next/image";
+import { Socials } from "./Menu/socials";
 
 export const Header = ({children}) => {
   const [menuMobile, setMenuMobile] = useState(false);
   const menuIsOpen = () => setMenuMobile(true);
   const menuIsClose = () => setMenuMobile(false);
   return (
-    <header className="py-3 flex justify-between items-center px-3 md:px-8 lg:px-12 xl:px-24 2xl:px-32 3xl:px-48  bg-primary-2 sticky top-0 z-50">
+    <header className="py-3 flex justify-between items-center px-3 lg:px-12 xl:px-24 2xl:px-32 3xl:px-48  bg-primary-2 sticky top-0 z-50">
       <Link className="items-center inline-flex gap-2" href="/">
         <Image
           width={1000}
           height={100}
           quality={100}
-          className="w-10 md:w-12"
+          className="w-10 lg:w-12"
           src="/structure/logo.png"
           alt=""
         />
-        <h1 className="text-2xl md:text-3xl font-extrabold font-sans text-secundary-2">
+        <h1 className="text-2xl lg:text-3xl font-extrabold font-sans text-secundary-2">
           ASQUIJA
         </h1>
       </Link>
@@ -36,8 +37,8 @@ export const Header = ({children}) => {
             <X className="text-secundary-2 size-8" />
           </div>
         )}
-        {menuMobile && <MobileMenu>{children}</MobileMenu>}
-        <MenuPlus>{children}</MenuPlus>
+        {menuMobile && <MobileMenu>{children}<Socials/></MobileMenu>}
+        <MenuPlus>{children}<Socials/></MenuPlus>
       </div>
     </header>
   );

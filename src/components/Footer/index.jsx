@@ -7,6 +7,7 @@ import {
   FaMapMarkerAlt,
   FaPhoneAlt,
 } from "react-icons/fa";
+import { BiSolidBank } from "react-icons/bi";
 import { IoIosMail } from "react-icons/io";
 
 export const Footer = () => {
@@ -33,10 +34,20 @@ export const Footer = () => {
             fortalecendo nossa cultura e lutando pelos nossos direitos.
           </p>
           <div className="text-xl md:text-2xl flex gap-2">
-            <a href="http://" target="_blank" rel="noopener noreferrer">
+            <a
+              href="http://"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:scale-110"
+            >
               <FaFacebook />
             </a>
-            <a href="http://" target="_blank" rel="noopener noreferrer">
+            <a
+              href="http://"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:scale-110"
+            >
               <FaInstagram />
             </a>
           </div>
@@ -56,8 +67,8 @@ export const Footer = () => {
             <a className="hover:text-terciary-1" href="#events">
               Eventos
             </a>
-            <a className="hover:text-terciary-1" href="#contact">
-              Contato
+            <a className="hover:text-terciary-1" href="/transparencia">
+              Transparência
             </a>
           </div>
         </div>
@@ -65,7 +76,7 @@ export const Footer = () => {
           <h3 className="text-lg md:text-xl">Contato</h3>
           <div className="flex flex-col flex-wrap gap-1 md:text-lg">
             <div className="flex gap-2 items-center">
-              <FaMapMarkerAlt className="text-primary-1 text-lg md:text-2xl" />
+              <FaMapMarkerAlt className="text-primary-1 text-lg md:text-lg" />
               <p>
                 Rodovia SP-123, Km 15, Zona Rural, João Alfredo - PE, CEP
                 55750-000
@@ -75,9 +86,14 @@ export const Footer = () => {
               <FaPhoneAlt className="text-primary-1" />
               <p>(12) 3456-7890</p>
             </div>
+
             <div className="flex gap-2 items-center">
-              <IoIosMail className="text-primary-1 md:text-2xl" />
+              <IoIosMail className="text-primary-1 md:text-lg" />
               <p>contato@campoecomunidade.org.br</p>
+            </div>
+            <div className="flex gap-2 items-center">
+              <BiSolidBank className="text-primary-1 md:text-lg" />
+              <p>CNPJ: 43.018.113/0001-27</p>
             </div>
           </div>
         </div>

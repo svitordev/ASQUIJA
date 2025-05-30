@@ -9,7 +9,7 @@ body {
   padding: 0;
   scroll-behavior: smooth;
 }
-#news, #events, #sobre, #inicio, #diretrizes, #equipe {
+#news, #projects, #sobre, #inicio, #diretrizes, #equipe {
     scroll-margin-top: 60px;
 }
 .home {
