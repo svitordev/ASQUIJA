@@ -25,7 +25,7 @@ export default function Home() {
           Contato
         </Link>
         <Link
-          className="bg-terciary-1 hover:bg-primary-1 px-2 py-1.5 text-white rounded-md"
+          className="bg-terciary-2 hover:bg-primary-1 px-2 py-1.5 text-white rounded-md"
           href="/transparencia"
         >
           Transparência
@@ -97,13 +97,13 @@ export default function Home() {
 
           <div className="flex flex-col md:grid md:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-3">
             <Projects
-              srcImg="/structure/quilomboForteLogo.png"
+              srcImg="/structure/quilomboForte/quilomboForteLogo.png"
               title="Quilombo Forte"
               resume={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor eos voluptatem vel magni aut fuga corrupti eligendi rem."}
               link=""
             />
             <Projects
-              srcImg="/structure/logo.png"
+              srcImg="/structure/asquija/logoAsquija.png"
               title="Mão na Massa"
               resume={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor eos voluptatem vel magni aut fuga corrupti eligendi rem."}
               link=""
@@ -127,7 +127,7 @@ export default function Home() {
                   href="http://"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:scale-105 hover:text-terciary-1"
+                  className="hover:scale-105 hover:text-primary-1"
                 >
                   <FaFacebook />
                 </a>
@@ -135,7 +135,7 @@ export default function Home() {
                   href="http://"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:scale-105 hover:text-terciary-1"
+                  className="hover:scale-105 hover:text-primary-1"
                 >
                   <FaInstagram />
                 </a>
@@ -143,14 +143,14 @@ export default function Home() {
                   href="http://"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:scale-105 hover:text-terciary-1"
+                  className="hover:scale-105 hover:text-primary-1"
                 >
                   <FaYoutube />
                 </a>
               </div>
               <div className="w-2/5 md:w-3/5 2xl:w-1/2  h-0.5 bg-secundary-3"></div>
               <Link
-                className="bg-terciary-2 hover:bg-terciary-1 px-4 py-2 text-white rounded-md lg:text-lg 2xl:text-2xl"
+                className="bg-terciary-2 hover:bg-primary-1 px-4 py-2 text-white rounded-md lg:text-lg 2xl:text-2xl shadow-lg shadow-primary-2/40"
                 href="/transparencia"
               >
                 Transparência

@@ -7,7 +7,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Socials } from "./Menu/socials";
 
-export const Header = ({children}) => {
+export const Header = ({ children }) => {
   const [menuMobile, setMenuMobile] = useState(false);
   const menuIsOpen = () => setMenuMobile(true);
   const menuIsClose = () => setMenuMobile(false);
@@ -19,7 +19,7 @@ export const Header = ({children}) => {
           height={100}
           quality={100}
           className="w-10 lg:w-12"
-          src="/structure/logo.png"
+          src="/structure/asquija/logoAsquija.png"
           alt=""
         />
         <h1 className="text-2xl lg:text-3xl font-extrabold font-sans text-secundary-2">
@@ -37,8 +37,18 @@ export const Header = ({children}) => {
             <X className="text-secundary-2 size-8" />
           </div>
         )}
-        {menuMobile && <MobileMenu>{children}<Socials/></MobileMenu>}
-        <MenuPlus>{children}<Socials/></MenuPlus>
+        {menuMobile && (
+          <MobileMenu>
+            {children}
+            <div className="h-[1px] w-20 md:w-[1px] md:h-10 bg-secundary-2"></div>
+            <Socials />
+          </MobileMenu>
+        )}
+        <MenuPlus>
+          {children}
+          <div className="h-[1px] w-20 md:w-[1px] md:h-10 bg-secundary-2"></div>
+          <Socials />
+        </MenuPlus>
       </div>
     </header>
   );

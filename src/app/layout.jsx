@@ -19,6 +19,7 @@ const merriweather = Merriweather({
 export const metadata = {
   title: "ASQUIJA",
   description: "",
+  icons:"/structure/asquija/logoAsquija.png"
 };
 
 export default function RootLayout({ children }) {

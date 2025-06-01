@@ -9,6 +9,7 @@ import {
 } from "react-icons/fa";
 import { BiSolidBank } from "react-icons/bi";
 import { IoIosMail } from "react-icons/io";
+import { Socials } from "../Header/Menu/socials";
 
 export const Footer = () => {
   return (
@@ -21,7 +22,7 @@ export const Footer = () => {
               height={100}
               quality={100}
               className="w-10 md:w-12"
-              src="/structure/logo.png"
+              src="/structure/asquija/logoAsquija.png"
               alt=""
             />
             <h1 className="text-xl md:text-2xl font-extrabold font-sans text-secundary-2">
@@ -33,24 +34,7 @@ export const Footer = () => {
             Associação Quilombola de João Alfredo - Preservando nossas raízes,
             fortalecendo nossa cultura e lutando pelos nossos direitos.
           </p>
-          <div className="text-xl md:text-2xl flex gap-2">
-            <a
-              href="http://"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:scale-110"
-            >
-              <FaFacebook />
-            </a>
-            <a
-              href="http://"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:scale-110"
-            >
-              <FaInstagram />
-            </a>
-          </div>
+          <Socials />
         </div>
         <div className="flex flex-col gap-2 mt-4 md:mt-0  md:w-1/5">
           <h3 className="text-lg md:text-xl">Acesso Rápido</h3>
@@ -78,18 +62,18 @@ export const Footer = () => {
             <div className="flex gap-2 items-center">
               <FaMapMarkerAlt className="text-primary-1 text-lg md:text-lg" />
               <p>
-                Rodovia SP-123, Km 15, Zona Rural, João Alfredo - PE, CEP
-                55750-000
+                Sítio Povoado de Brejinhos, S/Nº, Zona Rural, João Alfredo - PE, CEP
+                 55.720-000
               </p>
             </div>
             <div className="flex gap-2 items-center">
               <FaPhoneAlt className="text-primary-1" />
-              <p>(12) 3456-7890</p>
+              <p> (81) 99865-7166</p>
             </div>
 
             <div className="flex gap-2 items-center">
               <IoIosMail className="text-primary-1 md:text-lg" />
-              <p>contato@campoecomunidade.org.br</p>
+              <p> associaçãoquilombola71@gmail.com</p>
             </div>
             <div className="flex gap-2 items-center">
               <BiSolidBank className="text-primary-1 md:text-lg" />

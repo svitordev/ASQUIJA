@@ -5,7 +5,7 @@ export const TeamMember = ({name, role, src}) => {
   return (
     <div className="flex flex-col items-center gap-2">
       <Image
-        className="w-1/2 rounded-full hover:scale-105 transition-transform duration-300 ease-in-out object-cover"
+        className="w-1/2 h-full rounded-full hover:scale-105 transition-transform duration-300 ease-in-out object-cover bg-primary-2"
         quality={100}
         width={2000}
         height={100}

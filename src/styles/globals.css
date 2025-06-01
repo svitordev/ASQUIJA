@@ -10,10 +10,10 @@ body {
   scroll-behavior: smooth;
 }
 #news, #projects, #sobre, #inicio, #diretrizes, #equipe {
-    scroll-margin-top: 60px;
+    scroll-margin-top: 50px;
 }
 .home {
-  background-image: url("/structure/bgQuilombola.webp");
+  background-image: url("/structure/asquija/bgQuilombola.webp");
   background-size: cover;
   position: relative;
   z-index: 0;

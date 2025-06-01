@@ -17,24 +17,28 @@ export default function About() {
   const members = [
     {
       name: "Genilson Severino",
-      role: "Diretor Geral",
-      src: "/structure/perfil.png",
+      role: "Fundador",
+      src: "/structure/team/GenilsonFundador.jpg",
     },
     {
-      name: "Maria Clara",
-      role: "Diretor Administrativo",
-      src: "/structure/perfil.png",
+      name: "Missilene Santana",
+      role: "Presidenta",
+      src: "/structure/team/PreMisselene.jpg",
     },
     {
       name: "Maria Martins",
-      role: "Diretor Financeiro",
-      src: "/structure/perfil.png",
+      role: "Diretora Financeira",
+      src: "/structure/team/noUser.png",
     },
     {
       name: "Ruan Santos",
       role: "Secretário Geral",
-      src: "/structure/perfil.png",
+      src: "/structure/team/noUser.png",
     },
+  ];
+  const imagens = [
+    "/structure/asquija/sobre1.png",
+    "/structure/asquija/sobre1.png",
   ];
   return (
     <>
@@ -66,92 +70,109 @@ export default function About() {
           <div className="flex justify-between items-center gap-5 lg:gap-0">
             <div className="flex flex-col md:hidden space-y-4">
               <Title>
-                Uma trajetória de resistência, ancestralidade e fortalecimento
-                comunitário
+                Uma trajetória de resistência, cultura popular e compromisso com
+                a infância
               </Title>
               <div className="md:hidden space-y-4 text-justify text-secundary-4">
                 <p>
-                  A Associação Quilombola Raízes Vivas foi fundada em 2010, a
-                  partir da união de lideranças comunitárias que buscavam
-                  fortalecer a identidade cultural, garantir os direitos
-                  territoriais e promover melhores condições de vida para as
-                  famílias quilombolas da região. O que começou com encontros
-                  entre moradores se transformou em uma organização reconhecida
-                  pela sua luta e compromisso com a justiça social e o legado
-                  ancestral...
+                  A ASQUIJA – Associação Sociocultural Quilombola de João
+                  Alfredo – é uma Organização da Sociedade Civil (OSC) com
+                  atuação no Povoado Brejinhos, em João Alfredo-PE. Desde antes
+                  de sua formalização em 2015, já promovia ações culturais por
+                  meio do Maracatu, mobilizando a comunidade local em torno da
+                  arte negra e da cultura quilombola.
                 </p>
                 <Image
                   className="w-full rounded-md hover:scale-105 transition-transform duration-300 ease-in-out object-cover"
                   quality={100}
                   width={1000}
                   height={100}
-                  src={"/structure/bgQuilombola.webp"}
+                  src={imagens[0]}
                   alt=""
                 />
                 <p>
-                  Ao longo dos anos, nossa associação ampliou suas ações,
-                  firmando parcerias com instituições públicas e organizações da
-                  sociedade civil, desenvolvendo projetos voltados à educação,
-                  geração de renda, valorização cultural e proteção ambiental.
+                  A associação nasce do desejo coletivo de fortalecer a
+                  identidade cultural e promover a justiça social para crianças,
+                  adolescentes e famílias em situação de vulnerabilidade.
+                  Comprometida com a valorização das raízes ancestrais, atua
+                  também na luta pelo reconhecimento do território como
+                  remanescente de quilombo, processo que tramita na Fundação
+                  Palmares desde 2021.
                 </p>
                 <Image
                   className="w-full rounded-md hover:scale-105 transition-transform duration-300 ease-in-out object-cover"
                   quality={100}
                   width={1000}
                   height={100}
-                  src={"/structure/bgQuilombola.webp"}
+                  src={imagens[1]}
                   alt=""
                 />
                 <p>
-                  Atualmente, somos mais de 300 associados e contamos com uma
-                  estrutura que oferece apoio jurídico, técnico e social às
-                  comunidades quilombolas, sempre guiados pelos princípios da
-                  coletividade, resistência histórica e dignidade para todas as
-                  gerações.
+                  Ao longo de sua história, a ASQUIJA tem marcado presença em
+                  importantes encontros e festivais, como o Festival de Inverno
+                  de Garanhuns e o Encontro Nacional de Quilombolas –
+                  Aquilombar, reafirmando seu papel como agente de transformação
+                  cultural e social.
+                </p>
+                <p>
+                  Diante dos desafios impostos pelo contexto político e
+                  econômico atual, a associação tem intensificado suas ações em
+                  defesa dos direitos das infâncias e juventudes, buscando
+                  alternativas de proteção, geração de renda e fortalecimento
+                  comunitário.
                 </p>
               </div>
             </div>
 
             <div className="hidden md:flex flex-col self-start space-y-6 w-1/2">
               <Title>
-                Uma trajetória de resistência, ancestralidade e fortalecimento
-                comunitário
+                Uma trajetória de resistência, cultura popular e compromisso com
+                a infância
               </Title>
               <div className="space-y-4 text-justify 2xl:w-3/4 text-secundary-4">
                 <p>
-                  A Associação Quilombola Raízes Vivas foi fundada em 2010, a
-                  partir da união de lideranças comunitárias que buscavam
-                  fortalecer a identidade cultural, garantir os direitos
-                  territoriais e promover melhores condições de vida para as
-                  famílias quilombolas da região. O que começou com encontros
-                  entre moradores se transformou em uma organização reconhecida
-                  pela sua luta e compromisso com a justiça social e o legado
-                  ancestral.
+                  A ASQUIJA – Associação Sociocultural Quilombola de João
+                  Alfredo – é uma Organização da Sociedade Civil (OSC) com
+                  atuação no Povoado Brejinhos, em João Alfredo-PE. Desde antes
+                  de sua formalização em 2015, já promovia ações culturais por
+                  meio do Maracatu, mobilizando a comunidade local em torno da
+                  arte negra e da cultura quilombola.
                 </p>
 
                 <p>
-                  Ao longo dos anos, nossa associação ampliou suas ações,
-                  firmando parcerias com instituições públicas e organizações da
-                  sociedade civil, desenvolvendo projetos voltados à educação,
-                  geração de renda, valorização cultural e proteção ambiental.
+                  A associação nasce do desejo coletivo de fortalecer a
+                  identidade cultural e promover a justiça social para crianças,
+                  adolescentes e famílias em situação de vulnerabilidade.
+                  Comprometida com a valorização das raízes ancestrais, atua
+                  também na luta pelo reconhecimento do território como
+                  remanescente de quilombo, processo que tramita na Fundação
+                  Palmares desde 2021.
                 </p>
 
                 <p>
-                  Atualmente, somos mais de 300 associados e contamos com uma
-                  estrutura que oferece apoio jurídico, técnico e social às
-                  comunidades quilombolas, sempre guiados pelos princípios da
-                  coletividade, resistência histórica e dignidade para todas as
-                  gerações.
+                  Ao longo de sua história, a ASQUIJA tem marcado presença em
+                  importantes encontros e festivais, como o Festival de Inverno
+                  de Garanhuns e o Encontro Nacional de Quilombolas –
+                  Aquilombar, reafirmando seu papel como agente de transformação
+                  cultural e social.
+                </p>
+                <p>
+                  Diante dos desafios impostos pelo contexto político e
+                  econômico atual, a associação tem intensificado suas ações em
+                  defesa dos direitos das infâncias e juventudes, buscando
+                  alternativas de proteção, geração de renda e fortalecimento
+                  comunitário.
                 </p>
               </div>
             </div>
+
             <div className="hidden md:flex flex-col items-end space-y-6 w-1/2 xl:w-2/5">
               <Image
                 className="w-full lg:w-4/5 rounded-md hover:scale-105 transition-transform duration-300 ease-in-out object-cover"
                 quality={100}
                 width={1000}
                 height={100}
-                src={"/structure/bgQuilombola.webp"}
+                src={imagens[0]}
                 alt=""
               />
               <Image
@@ -159,7 +180,7 @@ export default function About() {
                 quality={100}
                 width={1000}
                 height={100}
-                src={"/structure/bgQuilombola.webp"}
+                src={imagens[1]}
                 alt=""
               />
             </div>
@@ -179,28 +200,30 @@ export default function About() {
           <div className="flex flex-col md:grid md:grid-cols-3 gap-4 md:gap-3 text-base font-semibold ">
             <BoxValues title={"Missão"}>
               <p className="text-secundary-4 ">
-                Preservar e fortalecer a identidade cultural e territorial da
-                comunidade quilombola do Sítio Bretinhos, promovendo o
-                desenvolvimento sustentável e a garantia dos direitos
-                individuais e coletivos de seus moradores.
+                Fortalecer a identidade cultural e a organização comunitária da
+                população do Povoado Brejinhos, com foco na arte negra e na
+                cultura quilombola, promovendo o desenvolvimento humano, a
+                proteção integral de crianças e adolescentes e a garantia de
+                direitos às famílias em situação de vulnerabilidade.
               </p>
             </BoxValues>
             <BoxValues title={"Visão"}>
               <p className="text-secundary-4 ">
-                Ser uma comunidade autônoma, reconhecida por sua rica herança
-                cultural, pela preservação de seu território tradicional e pela
-                qualidade de vida de seus habitantes, tornando-se referência
-                entre as comunidades quilombolas do Brasil.
+                Ser referência como organização comprometida com a cultura
+                popular, a justiça social e o reconhecimento do território
+                quilombola, contribuindo para a construção de uma comunidade
+                forte, unida, autônoma e protagonista de sua própria história.
               </p>
             </BoxValues>
             <BoxValues title={"Valores"}>
               <ul className="flex flex-col items-start  list-disc pl-3 text-secundary-4">
-                <li>Coletividade e solidariedade</li>
-                <li>Respeito aos ancestrais e tradições</li>
-                <li>Preservação ambiental</li>
-                <li>Educação e cultura</li>
-                <li>Equidade e justiça social</li>
-                <li>Resistência e autonomia</li>
+                <li>Compromisso com a cultura afro-brasileira e quilombola</li>
+                <li>Defesa dos direitos da infância e juventude</li>
+                <li>Coletividade, solidariedade e empatia</li>
+                <li>Autonomia, dignidade e resistência</li>
+                <li>Educação popular e acesso às políticas públicas</li>
+                <li>Justiça social e equidade racial</li>
+                <li>Preservação da memória, ancestralidade e território</li>
               </ul>
             </BoxValues>
           </div>
@@ -221,14 +244,22 @@ export default function About() {
               Conheça as diretrizes que orientam nossas ações e compromissos.{" "}
               <br /> Baixe o estatuto completo da ASQUIJA abaixo:
             </p>
-            <a
-              href="/structure/estatuto-asquija.pdf"
-              className="flex items-center gap-2 px-5 py-3 bg-secundary-1 hover:bg-secundary-3 rounded-full text-primary-2"
-              target="_blank"
-              rel="noopener"
-            >
-              <IoDocumentText /> Baixar Estatuto
-            </a>
+            <div className="flex gap-2">
+              <a
+                href="/structure/estatuto-asquija.pdf"
+                className="flex items-center gap-2 px-5 py-3 bg-secundary-1 hover:bg-secundary-3 rounded-full text-primary-2 shadow-md shadow-secundary-4/30"
+                target="_blank"
+                rel="noopener"
+              >
+                <IoDocumentText /> Baixar Estatuto
+              </a>
+              <Link
+                className="bg-terciary-2 hover:bg-primary-1 px-5 py-3 text-white rounded-full"
+                href="/transparencia"
+              >
+                Transparência
+              </Link>
+            </div>
           </div>
         </section>
 
@@ -242,13 +273,15 @@ export default function About() {
               <FaCertificate /> Nossa Equipe
             </Tag>
             <p className="text-secundary-4 md:w-3/5 md:text-lg">
-              Nossa equipe é formada por lideranças comprometidas com a
-              valorização da cultura quilombola, a defesa dos direitos das
-              comunidades e a construção de um futuro mais justo, coletivo e
-              enraizado na ancestralidade.
+              Nossa equipe é composta por lideranças comunitárias e defensores
+              dos direitos quilombolas que atuam com dedicação no fortalecimento
+              da cultura popular, no cuidado com as infâncias e na luta por
+              justiça social. São pessoas comprometidas com a transformação do
+              território, guiadas pela ancestralidade, pela coletividade e pela
+              construção de um amanhã mais digno para todas as gerações.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-0">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-6 lg:gap-0">
             {members.map((member, index) => (
               <TeamMember
                 key={index}
