@@ -135,12 +135,12 @@ export default function Home() {
                   href="http://"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:scale-105 hover:text-primary-1"
+                  className="hover:scale-105 hover:text-primary-1 pointer-events-none"
                 >
                   <FaFacebook />
                 </a>
                 <a
-                  href="http://"
+                  href="https://www.instagram.com/associacaoquilombolaa/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:scale-105 hover:text-primary-1"
@@ -151,7 +151,7 @@ export default function Home() {
                   href="http://"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:scale-105 hover:text-primary-1"
+                  className="hover:scale-105 hover:text-primary-1 pointer-events-none"
                 >
                   <FaYoutube />
                 </a>

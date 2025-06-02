@@ -45,11 +45,11 @@ export default function About() {
   return (
     <>
       <Header>
-        <Link className="hover:text-terciary-1 md:hidden lg:block" href="/">
-          Página Principal
-        </Link>
         <Link className="hover:text-terciary-1" href="#diretrizes">
           Diretrizes
+        </Link>
+        <Link className="hover:text-terciary-1" href="#estatuto">
+          Estatuto
         </Link>
         <Link className="hover:text-terciary-1" href="#equipe">
           Diretoria
@@ -184,7 +184,7 @@ export default function About() {
             <div className="hidden md:flex flex-col items-end space-y-3 w-1/2 xl:w-2/5">
               <div className="flex gap-3 justify-end">
                 <Image
-                  className="w-full md:w-[49%]  lg:w-2/5 rounded-md hover:scale-105 transition-transform duration-300 ease-in-out object-cover"
+                  className="w-full md:w-[48.5%]  lg:w-2/5 rounded-md hover:scale-105 transition-transform duration-300 ease-in-out object-cover"
                   quality={100}
                   width={1000}
                   height={100}
@@ -192,7 +192,7 @@ export default function About() {
                   alt=""
                 />
                 <Image
-                  className="w-full md:w-[49%] lg:w-2/5 rounded-md hover:scale-105 transition-transform duration-300 ease-in-out object-cover"
+                  className="w-full md:w-[48.5%] lg:w-2/5 rounded-md hover:scale-105 transition-transform duration-300 ease-in-out object-cover"
                   quality={100}
                   width={1000}
                   height={100}
@@ -278,10 +278,10 @@ export default function About() {
                 <IoDocumentText /> Baixar Estatuto
               </a>
               <Link
-                className="bg-terciary-2 hover:bg-primary-1 px-5 py-3 text-white rounded-full"
+                className="bg-terciary-2 hover:bg-primary-1 px-5 py-3 text-white rounded-full shadow-md shadow-terciary-2/50 flex items-center gap-2"
                 href="/transparencia"
               >
-                Transparência
+                <IoDocumentText /> Transparência
               </Link>
             </div>
           </div>

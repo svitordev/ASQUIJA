@@ -11,8 +11,8 @@ import { Footer } from "@/components/Footer";
 
 export default function QuilomboForte() {
   const imagens = [
-    "/structure/asquija/sobre1.png",
-    "/structure/asquija/sobre1.png",
+    "/structure/quilomboForte/sobre1.jpg",
+    "/structure/quilomboForte/sobre2.jpg",
   ];
   return (
     <>
@@ -385,9 +385,6 @@ export default function QuilomboForte() {
         </section>
       </main>
       <Footer>
-        <Link className="hover:text-terciary-1" href="/">
-          Página Principal
-        </Link>
         <Link className="hover:text-terciary-1" href="#objetivos">
           Objetivos
         </Link>

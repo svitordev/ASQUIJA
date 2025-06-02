@@ -1,5 +1,5 @@
 import React from "react";
-import { FaFacebook, FaInstagram } from "react-icons/fa6";
+import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa6";
 
 export const Socials = () => {
   return (
@@ -8,7 +8,7 @@ export const Socials = () => {
         href="http://"
         target="_blank"
         rel="noopener noreferrer"
-        className="hover:scale-110"
+        className="hover:scale-110 pointer-events-none"
       >
         <FaFacebook />
       </a>
@@ -19,6 +19,14 @@ export const Socials = () => {
         className="hover:scale-110"
       >
         <FaInstagram />
+      </a>
+      <a
+        href="https://"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:scale-110 pointer-events-none"
+      >
+        <FaYoutube />
       </a>
     </div>
   );

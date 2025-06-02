@@ -9,7 +9,7 @@ body {
   padding: 0;
   scroll-behavior: smooth;
 }
-#news, #projects, #sobre, #inicio, #diretrizes, #equipe,#objetivos,#atividades,#beneficiados,#metodologias,#impacto {
+#news, #projects, #sobre, #inicio,#estatuto, #diretrizes, #equipe,#objetivos,#atividades,#beneficiados,#metodologias,#impacto {
     scroll-margin-top: 50px;
 }
 #inicio{
