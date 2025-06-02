@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://asquija.org.br
+
+# Sitemaps
+Sitemap: https://asquija.org.br/sitemap.xml

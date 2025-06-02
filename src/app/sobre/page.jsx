@@ -12,6 +12,7 @@ import Link from "next/link";
 import { BoxValues } from "@/components/BoxValues";
 import { TeamMember } from "@/components/TeamMember";
 import { TopTitle } from "@/components/TopTitle";
+import { Footer } from "@/components/Footer";
 
 export default function About() {
   const members = [
@@ -38,11 +39,15 @@ export default function About() {
   ];
   const imagens = [
     "/structure/asquija/sobre1.png",
-    "/structure/asquija/sobre1.png",
+    "/structure/asquija/sobre2.webp",
+    "/structure/asquija/sobre3.jpg",
   ];
   return (
     <>
       <Header>
+        <Link className="hover:text-terciary-1 md:hidden lg:block" href="/">
+          Página Principal
+        </Link>
         <Link className="hover:text-terciary-1" href="#diretrizes">
           Diretrizes
         </Link>
@@ -59,7 +64,7 @@ export default function About() {
           Transparência
         </Link>{" "}
       </Header>
-      <main id="top">
+      <main id="inicio">
         <TopTitle>Sobre Nós</TopTitle>
 
         <section className="space-y-2 py-12 px-2 md:px-4 lg:px-12 xl:px-24 2xl:px-32 3xl:px-56">
@@ -82,14 +87,24 @@ export default function About() {
                   meio do Maracatu, mobilizando a comunidade local em torno da
                   arte negra e da cultura quilombola.
                 </p>
-                <Image
-                  className="w-full rounded-md hover:scale-105 transition-transform duration-300 ease-in-out object-cover"
-                  quality={100}
-                  width={1000}
-                  height={100}
-                  src={imagens[0]}
-                  alt=""
-                />
+                <div className="flex justify-between">
+                  <Image
+                    className="w-[49%] rounded-md hover:scale-105 transition-transform duration-300 ease-in-out object-cover"
+                    quality={100}
+                    width={1000}
+                    height={100}
+                    src={imagens[1]}
+                    alt=""
+                  />
+                  <Image
+                    className="w-[49%] rounded-md hover:scale-105 transition-transform duration-300 ease-in-out object-cover"
+                    quality={100}
+                    width={1000}
+                    height={100}
+                    src={imagens[2]}
+                    alt=""
+                  />
+                </div>
                 <p>
                   A associação nasce do desejo coletivo de fortalecer a
                   identidade cultural e promover a justiça social para crianças,
@@ -104,7 +119,7 @@ export default function About() {
                   quality={100}
                   width={1000}
                   height={100}
-                  src={imagens[1]}
+                  src={imagens[0]}
                   alt=""
                 />
                 <p>
@@ -166,21 +181,32 @@ export default function About() {
               </div>
             </div>
 
-            <div className="hidden md:flex flex-col items-end space-y-6 w-1/2 xl:w-2/5">
+            <div className="hidden md:flex flex-col items-end space-y-3 w-1/2 xl:w-2/5">
+              <div className="flex gap-3 justify-end">
+                <Image
+                  className="w-full md:w-[49%]  lg:w-2/5 rounded-md hover:scale-105 transition-transform duration-300 ease-in-out object-cover"
+                  quality={100}
+                  width={1000}
+                  height={100}
+                  src={imagens[1]}
+                  alt=""
+                />
+                <Image
+                  className="w-full md:w-[49%] lg:w-2/5 rounded-md hover:scale-105 transition-transform duration-300 ease-in-out object-cover"
+                  quality={100}
+                  width={1000}
+                  height={100}
+                  src={imagens[2]}
+                  alt=""
+                />
+              </div>
+
               <Image
-                className="w-full lg:w-4/5 rounded-md hover:scale-105 transition-transform duration-300 ease-in-out object-cover"
+                className="w-full lg:w-[82%] rounded-md hover:scale-105 transition-transform duration-300 ease-in-out object-cover"
                 quality={100}
                 width={1000}
                 height={100}
                 src={imagens[0]}
-                alt=""
-              />
-              <Image
-                className="w-full lg:w-4/5 rounded-md hover:scale-105 transition-transform duration-300 ease-in-out object-cover"
-                quality={100}
-                width={1000}
-                height={100}
-                src={imagens[1]}
                 alt=""
               />
             </div>
@@ -216,15 +242,13 @@ export default function About() {
               </p>
             </BoxValues>
             <BoxValues title={"Valores"}>
-              <ul className="flex flex-col items-start  list-disc pl-3 text-secundary-4">
-                <li>Compromisso com a cultura afro-brasileira e quilombola</li>
-                <li>Defesa dos direitos da infância e juventude</li>
-                <li>Coletividade, solidariedade e empatia</li>
-                <li>Autonomia, dignidade e resistência</li>
-                <li>Educação popular e acesso às políticas públicas</li>
-                <li>Justiça social e equidade racial</li>
-                <li>Preservação da memória, ancestralidade e território</li>
-              </ul>
+              <p className="text-secundary-4 ">
+                Cultivamos o compromisso com a cultura afro-brasileira e
+                quilombola, a defesa da infância e juventude, a solidariedade, a
+                dignidade e a resistência. Valorizamos a educação popular, a
+                justiça social, a equidade racial e a preservação da memória e
+                do território.
+              </p>
             </BoxValues>
           </div>
         </section>
@@ -293,6 +317,23 @@ export default function About() {
           </div>
         </section>
       </main>
+      <Footer>
+        <Link className="hover:text-terciary-1" href="/">
+          Página Principal
+        </Link>
+        <Link className="hover:text-terciary-1" href="#diretrizes">
+          Diretrizes
+        </Link>
+        <Link className="hover:text-terciary-1" href="#equipe">
+          Diretoria
+        </Link>
+        <Link className="hover:text-terciary-1" href="#contact">
+          Contato
+        </Link>
+        <Link className="hover:text-terciary-1" href="/transparencia">
+          Transparência
+        </Link>{" "}
+      </Footer>
     </>
   );
 }

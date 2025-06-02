@@ -9,8 +9,11 @@ body {
   padding: 0;
   scroll-behavior: smooth;
 }
-#news, #projects, #sobre, #inicio, #diretrizes, #equipe {
+#news, #projects, #sobre, #inicio, #diretrizes, #equipe,#objetivos,#atividades,#beneficiados,#metodologias,#impacto {
     scroll-margin-top: 50px;
+}
+#inicio{
+    scroll-margin-top: 80px;
 }
 .home {
   background-image: url("/structure/asquija/bgQuilombola.webp");

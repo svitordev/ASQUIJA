@@ -24,7 +24,7 @@ export const BackToTopButton = () => {
   
     return (
       isVisible && ( 
-          <Link href="#top" className="fixed w-12 h-12 bottom-24 md:bottom-20 lg:bottom-4 right-4 rounded-full flex justify-center items-center bg-terciary-2 text-secundary-1">
+          <Link href="#inicio" className="fixed w-12 h-12 bottom-24 md:bottom-20 lg:bottom-4 right-4 rounded-full flex justify-center items-center bg-terciary-2 text-secundary-1">
           <IoIosArrowDropup className="w-full h-full"/>
           </Link>
           

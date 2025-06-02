@@ -1,9 +1,9 @@
 import { BoxValues } from "@/components/BoxValues";
+import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { CarouselNews } from "@/components/NewsCarousel";
 import { Projects } from "@/components/Projects";
 import { Title } from "@/components/Title";
-import Image from "next/image";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa6";
@@ -31,7 +31,7 @@ export default function Home() {
           Transparência
         </Link>{" "}
       </Header>
-      <main id="top">
+      <main id="inicio">
         <section className="home w-full h-full lg:h-dvh py-16 flex flex-col items-center justify-center gap-6 lg:gap-12 text-center">
           <h1 className="text-secundary-2 text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl font-sans font-bold md:w-4/5 xl:w-3/5">
             Associação Quilombola <br /> de João Alfredo
@@ -62,29 +62,29 @@ export default function Home() {
           <div className="flex flex-col md:grid md:grid-cols-3 gap-4 md:gap-3 text-base font-semibold ">
             <BoxValues bg={true} title={"Missão"}>
               <p className="text-secundary-4 ">
-                Preservar e fortalecer a identidade cultural e territorial da
-                comunidade quilombola do Sítio Bretinhos, promovendo o
-                desenvolvimento sustentável e a garantia dos direitos
-                individuais e coletivos de seus moradores.
+                Fortalecer a identidade cultural e a organização comunitária da
+                população do Povoado Brejinhos, com foco na arte negra e na
+                cultura quilombola, promovendo o desenvolvimento humano, a
+                proteção integral de crianças e adolescentes e a garantia de
+                direitos às famílias em situação de vulnerabilidade.
               </p>
             </BoxValues>
             <BoxValues bg={true} title={"Visão"}>
               <p className="text-secundary-4 ">
-                Ser uma comunidade autônoma, reconhecida por sua rica herança
-                cultural, pela preservação de seu território tradicional e pela
-                qualidade de vida de seus habitantes, tornando-se referência
-                entre as comunidades quilombolas do Brasil.
+                Ser referência como organização comprometida com a cultura
+                popular, a justiça social e o reconhecimento do território
+                quilombola, contribuindo para a construção de uma comunidade
+                forte, unida, autônoma e protagonista de sua própria história.
               </p>
             </BoxValues>
             <BoxValues bg={true} title={"Valores"}>
-              <ul className="flex flex-col items-start  list-disc pl-3 text-secundary-4">
-                <li>Coletividade e solidariedade</li>
-                <li>Respeito aos ancestrais e tradições</li>
-                <li>Preservação ambiental</li>
-                <li>Educação e cultura</li>
-                <li>Equidade e justiça social</li>
-                <li>Resistência e autonomia</li>
-              </ul>
+              <p className="text-secundary-4 ">
+                Cultivamos o compromisso com a cultura afro-brasileira e
+                quilombola, a defesa da infância e juventude, a solidariedade, a
+                dignidade e a resistência. Valorizamos a educação popular, a
+                justiça social, a equidade racial e a preservação da memória e
+                do território.
+              </p>
             </BoxValues>
           </div>
         </section>
@@ -99,13 +99,21 @@ export default function Home() {
             <Projects
               srcImg="/structure/quilomboForte/quilomboForteLogo.png"
               title="Quilombo Forte"
-              resume={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor eos voluptatem vel magni aut fuga corrupti eligendi rem."}
-              link=""
+              resume={
+                "Iniciativa da ASQUIJA que visa contribuir para a proteção e o desenvolvimento integral de crianças, adolescentes e suas famílias da comunidade quilombola de Brejinhos, em João Alfredo – PE"
+              }
+              link="/projetos/quilomboForte"
             />
             <Projects
               srcImg="/structure/asquija/logoAsquija.png"
-              title="Mão na Massa"
-              resume={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor eos voluptatem vel magni aut fuga corrupti eligendi rem."}
+              title={
+                <>
+                  Mulheres Quilombola <br /> Mão na Massa
+                </>
+              }
+              resume={
+                "Projeto voltado à valorização da culinária quilombola, com oficinas práticas que resgatam receitas tradicionais e fortalecem a autonomia das mulheres da comunidade"
+              }
               link=""
             />
           </div>
@@ -159,6 +167,23 @@ export default function Home() {
           </div>
         </section>
       </main>
+      <Footer>
+        <Link className="hover:text-terciary-1" href="/sobre">
+          Sobre Nós
+        </Link>
+        <Link className="hover:text-terciary-1" href="#projects">
+          Projetos
+        </Link>
+        <Link className="hover:text-terciary-1" href="#news">
+          Noticias
+        </Link>
+        <Link className="hover:text-terciary-1" href="#contact">
+          Contato
+        </Link>
+        <Link className="hover:text-terciary-1" href="/transparencia">
+          Transparência
+        </Link>{" "}
+      </Footer>
     </>
   );
 }

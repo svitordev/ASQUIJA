@@ -1,3 +1,4 @@
+import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { Title } from "@/components/Title";
 import { TopTitle } from "@/components/TopTitle";
@@ -27,32 +28,40 @@ export default function Transparency() {
   return (
     <>
       <Header>
+        <Link className="hover:text-terciary-1" href="/">
+          Página Principal
+        </Link>
         <Link className="hover:text-terciary-1" href="/sobre">
           Sobre Nós
         </Link>
-        <Link className="hover:text-terciary-1" href="#contact">
-          Contato
-        </Link>{" "}
       </Header>
       <main id="top">
         <TopTitle>Painel da Transparência</TopTitle>
         <section className=" space-y-10 py-12 px-3 md:px-4 lg:px-12 xl:px-24 2xl:px-44 3xl:px-72">
           <Title>Compromisso com a Transparência</Title>
           <div className="space-y-3">
-            {files.map((file, index)=>(
+            {files.map((file, index) => (
               <a
-              key={index}
-              href={file.src}
-              className="flex items-center gap-2 text-primary-2 hover:text-primary-1 text-lg"
-              target="_blank"
-              rel="noopener"
-            >
-              <IoDocumentText /> {file.text}
-            </a>
+                key={index}
+                href={file.src}
+                className="flex items-center gap-2 text-primary-2 hover:text-primary-1 text-lg"
+                target="_blank"
+                rel="noopener"
+              >
+                <IoDocumentText /> {file.text}
+              </a>
             ))}
           </div>
         </section>
       </main>
+      <Footer>
+        <Link className="hover:text-terciary-1" href="/">
+          Página Principal
+        </Link>
+        <Link className="hover:text-terciary-1" href="/sobre">
+          Sobre Nós
+        </Link>
+      </Footer>
     </>
   );
 }

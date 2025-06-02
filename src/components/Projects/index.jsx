@@ -13,7 +13,7 @@ export const Projects = ({ srcImg, title, link, resume }) => {
         height={100}
         className="w-1/2 md:w-3/5 rounded-full hover:scale-110 transition-transform duration-300 ease-in-out object-cover"
       />
-      <h2 className="text-terciary-2 text-xl   font-bold uppercase">
+      <h2 className="text-terciary-2 text-xl font-bold uppercase text-center">
         {title}
       </h2>
       <p className="text-center w-4/5 text-primary-2  text-sm">{resume}</p>

@@ -2,8 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import {
-  FaFacebook,
-  FaInstagram,
   FaMapMarkerAlt,
   FaPhoneAlt,
 } from "react-icons/fa";
@@ -11,7 +9,7 @@ import { BiSolidBank } from "react-icons/bi";
 import { IoIosMail } from "react-icons/io";
 import { Socials } from "../Header/Menu/socials";
 
-export const Footer = () => {
+export const Footer = ({children}) => {
   return (
     <footer id="contact" className="">
       <div className="bg-primary-2 text-secundary-2 border-b border-secundary-3 py-8 px-6 md:px-4 lg:px-12 xl:px-24 2xl:px-32 3xl:px-56 flex flex-col  md:flex-row md:gap-8 justify-between">
@@ -39,21 +37,7 @@ export const Footer = () => {
         <div className="flex flex-col gap-2 mt-4 md:mt-0  md:w-1/5">
           <h3 className="text-lg md:text-xl">Acesso Rápido</h3>
           <div className="flex flex-col h-20 md:h-full flex-wrap md:text-lg">
-            <Link className="hover:text-terciary-1" href="/">
-              Início
-            </Link>
-            <Link className="hover:text-terciary-1" href="/sobre">
-              Sobre Nós
-            </Link>
-            <a className="hover:text-terciary-1" href="#news">
-              Notícias
-            </a>
-            <a className="hover:text-terciary-1" href="#events">
-              Eventos
-            </a>
-            <a className="hover:text-terciary-1" href="/transparencia">
-              Transparência
-            </a>
+            {children}
           </div>
         </div>
         <div className="flex flex-col gap-2 mt-4 md:mt-0  md:w-2/5">
