@@ -105,7 +105,7 @@ export default function Home() {
               link="/projetos/quilomboForte"
             />
             <Projects
-              srcImg="/structure/asquija/logoAsquija.png"
+              srcImg="/structure/maoNaMassa/logoMNM.png"
               title={
                 <>
                   Mulheres Quilombola <br /> Mão na Massa
