@@ -3,7 +3,6 @@ import { Title } from "@/components/Title";
 import React from "react";
 import { FiTarget } from "react-icons/fi";
 import { Events } from "./groupEvent";
-import { GridGallery } from "./gridGallery";
 import Image from "next/image";
 
 export const SectionEvent = () => {

@@ -7,9 +7,7 @@ import Link from "next/link";
 import { FiTarget } from "react-icons/fi";
 import { BoxImpact } from "./boxImpact";
 import { Footer } from "@/components/Footer";
-import { Events } from "./events/groupEvent";
 import React from "react";
-import { GridGallery, MasonryGridGallery } from "./events/gridGallery";
 import { SectionEvent } from "./events";
 
 export default function QuilomboForte() {
