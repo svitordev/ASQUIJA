@@ -7,7 +7,10 @@ import Link from "next/link";
 import { FiTarget } from "react-icons/fi";
 import { BoxImpact } from "./boxImpact";
 import { Footer } from "@/components/Footer";
-
+import { Events } from "./events/groupEvent";
+import React from "react";
+import { GridGallery, MasonryGridGallery } from "./events/gridGallery";
+import { SectionEvent } from "./events";
 
 export default function QuilomboForte() {
   const imagens = [
@@ -16,7 +19,6 @@ export default function QuilomboForte() {
   ];
   return (
     <>
-      
       <main id="inicio">
         <TopTitle
           subTitle={"Cultura, educação e geração de renda"}
@@ -157,20 +159,20 @@ export default function QuilomboForte() {
             </Tag>
           </div>
           <div className="flex flex-col md:grid md:grid-cols-3 gap-4 md:gap-3 text-base font-semibold ">
-            <BoxValues title={"Fortalecimento da Identidade"}>
+            <BoxValues bg={true} title={"Fortalecimento da Identidade"}>
               <p className="text-secundary-4 ">
                 Fortalecer os vínculos identitários através de atividades de
                 arte e educação, valorizando as raízes culturais de matriz
                 africana.
               </p>
             </BoxValues>
-            <BoxValues title={"Exercício de Direitos"}>
+            <BoxValues bg={true} title={"Exercício de Direitos"}>
               <p className="text-secundary-4 ">
                 Contribuir para o exercício dos direitos fundamentais ao lazer,
                 esporte, expressão e participação social e política.
               </p>
             </BoxValues>
-            <BoxValues title={"Geração de Renda"}>
+            <BoxValues bg={true} title={"Geração de Renda"}>
               <p className="text-secundary-4 ">
                 Identificar alternativas para geração de renda baseada na
                 cultura afro-brasileira e estética negra para famílias da
@@ -180,9 +182,11 @@ export default function QuilomboForte() {
           </div>
         </section>
 
+        <SectionEvent />
+
         <section
           id="atividades"
-          className="flex flex-col items-center justify-center space-y-10 py-12 px-3 md:px-4 lg:px-12 xl:px-24 2xl:px-32 3xl:px-56"
+          className="flex flex-col items-center justify-center space-y-10 py-12 px-3 md:px-4 lg:px-12 xl:px-24 2xl:px-32 3xl:px-56 bg-secundary-1/40"
         >
           <div className="space-y-2 w-full">
             <Title center={true}>Atividades Desenvolvidas</Title>
@@ -282,7 +286,7 @@ export default function QuilomboForte() {
 
         <section
           id="beneficiados"
-          className="flex flex-col items-center justify-center space-y-10 py-12 px-3 md:px-4 lg:px-12 xl:px-24 2xl:px-32 3xl:px-56 bg-secundary-1/40"
+          className="flex flex-col items-center justify-center space-y-10 py-12 px-3 md:px-4 lg:px-12 xl:px-24 2xl:px-32 3xl:px-56"
         >
           <div className="space-y-2 w-full">
             <Title center={true}>Público Beneficiado</Title>
@@ -326,7 +330,7 @@ export default function QuilomboForte() {
 
         <section
           id="metodologias"
-          className="flex flex-col items-center justify-center space-y-10 py-12 px-3 md:px-4 lg:px-12 xl:px-24 2xl:px-32 3xl:px-56"
+          className="flex flex-col items-center justify-center space-y-10 py-12 px-3 md:px-4 lg:px-12 xl:px-24 2xl:px-32 3xl:px-56 bg-secundary-1/40"
         >
           <div className="space-y-2 w-full">
             <Title center={true}>Metodologia</Title>
@@ -358,7 +362,7 @@ export default function QuilomboForte() {
 
         <section
           id="impacto"
-          className="flex flex-col items-center justify-center space-y-10 py-12 px-3 md:px-4 lg:px-12 xl:px-24 2xl:px-32 3xl:px-56 bg-secundary-1/40"
+          className="flex flex-col items-center justify-center space-y-10 py-12 px-3 md:px-4 lg:px-12 xl:px-24 2xl:px-32 3xl:px-56"
         >
           <div className="space-y-2 w-full">
             <Title center={true}>Impacto na Comunidade</Title>
