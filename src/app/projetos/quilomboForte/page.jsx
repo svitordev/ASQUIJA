@@ -12,7 +12,7 @@ import { SectionEvent } from "./events";
 
 export default function QuilomboForte() {
   const imagens = [
-    "/structure/quilomboForte/sobre1.jpg",
+    "/structure/quilomboForte/videoQF.mp4",
     "/structure/quilomboForte/sobre2.jpg",
   ];
   return (
@@ -27,7 +27,7 @@ export default function QuilomboForte() {
           Projeto Quilombo Forte
         </TopTitle>
 
-        <section className="space-y-2 py-12 px-2 md:px-4 lg:px-12 xl:px-24 2xl:px-32 3xl:px-56">
+        <section className="space-y-2 py-12 px-4 lg:px-12 xl:px-24 2xl:px-32 3xl:px-56">
           <Tag>
             <FiTarget /> Nossa História
           </Tag>
@@ -45,14 +45,13 @@ export default function QuilomboForte() {
                   crianças, adolescentes e suas famílias da comunidade
                   quilombola de Brejinhos, em João Alfredo – PE.
                 </p>
-                <Image
-                  className="w-full rounded-md hover:scale-105 transition-transform duration-300 ease-in-out object-cover"
-                  quality={100}
-                  width={1000}
-                  height={100}
-                  src={imagens[0]}
-                  alt=""
-                />
+                <video
+                  controls
+                  className="w-full  rounded-md hover:scale-105 transition-transform duration-300 ease-in-out object-cover"
+                >
+                  <source src={imagens[0]} type="video/mp4" />
+                  Seu navegador não suporta o elemento de vídeo.
+                </video>
                 <p>
                   Com foco na valorização da identidade étnico-racial, no
                   fortalecimento dos vínculos afetivos e comunitários e na
@@ -126,14 +125,13 @@ export default function QuilomboForte() {
             </div>
 
             <div className="hidden md:flex flex-col items-end space-y-6 w-1/2 xl:w-2/5">
-              <Image
-                className="w-full lg:w-4/5 rounded-md hover:scale-105 transition-transform duration-300 ease-in-out object-cover"
-                quality={100}
-                width={1000}
-                height={100}
-                src={imagens[0]}
-                alt=""
-              />
+              <video
+                controls
+                className="w-full lg:w-3/5 rounded-md hover:scale-105 transition-transform duration-300 ease-in-out object-cover"
+              >
+                <source src={imagens[0]} type="video/mp4" />
+                Seu navegador não suporta o elemento de vídeo.
+              </video>
               <Image
                 className="w-full lg:w-4/5 rounded-md hover:scale-105 transition-transform duration-300 ease-in-out object-cover"
                 quality={100}
@@ -148,7 +146,7 @@ export default function QuilomboForte() {
 
         <section
           id="objetivos"
-          className="flex flex-col items-center justify-center space-y-10 py-12 px-3 md:px-4 lg:px-12 xl:px-24 2xl:px-32 3xl:px-56 bg-secundary-1/40"
+          className="flex flex-col items-center justify-center space-y-10 py-12 px-4 lg:px-12 xl:px-24 2xl:px-32 3xl:px-56 bg-secundary-1/40"
         >
           <div className="space-y-2 w-full">
             <Title center={true}>Objetivos do Projeto</Title>
@@ -184,7 +182,7 @@ export default function QuilomboForte() {
 
         <section
           id="atividades"
-          className="flex flex-col items-center justify-center space-y-10 py-12 px-3 md:px-4 lg:px-12 xl:px-24 2xl:px-32 3xl:px-56 bg-secundary-1/40"
+          className="flex flex-col items-center justify-center space-y-10 py-12 px-4 lg:px-12 xl:px-24 2xl:px-32 3xl:px-56 bg-secundary-1/40"
         >
           <div className="space-y-2 w-full">
             <Title center={true}>Atividades Desenvolvidas</Title>
@@ -284,7 +282,7 @@ export default function QuilomboForte() {
 
         <section
           id="beneficiados"
-          className="flex flex-col items-center justify-center space-y-10 py-12 px-3 md:px-4 lg:px-12 xl:px-24 2xl:px-32 3xl:px-56"
+          className="flex flex-col items-center justify-center space-y-10 py-12 px-4 lg:px-12 xl:px-24 2xl:px-32 3xl:px-56"
         >
           <div className="space-y-2 w-full">
             <Title center={true}>Público Beneficiado</Title>
@@ -328,7 +326,7 @@ export default function QuilomboForte() {
 
         <section
           id="metodologias"
-          className="flex flex-col items-center justify-center space-y-10 py-12 px-3 md:px-4 lg:px-12 xl:px-24 2xl:px-32 3xl:px-56 bg-secundary-1/40"
+          className="flex flex-col items-center justify-center space-y-10 py-12 px-4 lg:px-12 xl:px-24 2xl:px-32 3xl:px-56 bg-secundary-1/40"
         >
           <div className="space-y-2 w-full">
             <Title center={true}>Metodologia</Title>
@@ -360,7 +358,7 @@ export default function QuilomboForte() {
 
         <section
           id="impacto"
-          className="flex flex-col items-center justify-center space-y-10 py-12 px-3 md:px-4 lg:px-12 xl:px-24 2xl:px-32 3xl:px-56"
+          className="flex flex-col items-center justify-center space-y-10 py-12 px-4 lg:px-12 xl:px-24 2xl:px-32 3xl:px-56"
         >
           <div className="space-y-2 w-full">
             <Title center={true}>Impacto na Comunidade</Title>

@@ -32,7 +32,7 @@ export const SectionEvent = () => {
   return (
     <section
       id="eventos"
-      className="flex flex-col  space-y-10 py-12 px-3 md:px-4 lg:px-12 xl:px-24 2xl:px-32 3xl:px-56"
+      className="flex flex-col  space-y-10 py-12 px-4 lg:px-12 xl:px-24 2xl:px-32 3xl:px-56"
     >
       <div className="space-y-2 w-full">
         <Title center={true}>Eventos</Title>
@@ -43,7 +43,7 @@ export const SectionEvent = () => {
       <div className="space-y-4">
         <Events title={"Cine CAIXA CAP  – Capitalização"}>
 
-          <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
             <div className="grid gap-2.5">
               {cineCaixa.first.map((media, index) => (
                 <div key={index}>

@@ -4,7 +4,7 @@ import React from "react";
 
 export const Projects = ({ srcImg, title, link, resume }) => {
   return (
-    <div className="bg-secundary-3 rounded-lg font-sans py-5  shadow-lg shadow-primary-2/50 overflow-hidden flex flex-col items-center justify-evenly gap-2">
+    <div className="bg-secundary-3 rounded-lg font-sans py-5  shadow-lg shadow-secundary-4/30 overflow-hidden flex flex-col items-center justify-evenly gap-2">
       <Image
         src={srcImg}
         alt={title}
