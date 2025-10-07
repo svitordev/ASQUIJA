@@ -112,6 +112,18 @@ export default function Home() {
               link="/projetos/quilomboForte"
             />
             <Projects
+              srcImg="/structure/dandara/LogoDandara.png"
+              title={
+                <>
+                  Grupo Dandara <br /> de Brejinhos
+                </>
+              }
+              resume={
+                "Projeto de dança afro-contemporânea que, por meio de vivências em maculelê e ciranda, valoriza a ancestralidade, fortalece a cultura local e impulsiona o protagonismo de jovens mulheres negras."
+              }
+              link="/projetos/dandaraDeBrejinhos"
+            />
+            <Projects
               srcImg="/structure/maoNaMassa/logoMNM.png"
               title={
                 <>
@@ -123,6 +135,7 @@ export default function Home() {
               }
               link=""
             />
+            
           </div>
         </section>
 
