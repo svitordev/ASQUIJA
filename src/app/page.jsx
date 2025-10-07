@@ -112,7 +112,7 @@ export default function Home() {
               link="/projetos/quilomboForte"
             />
             <Projects
-              srcImg="/structure/dandara/LogoDandara.png"
+              srcImg="/structure/dandara/logoDandara.png"
               title={
                 <>
                   Grupo Dandara <br /> de Brejinhos
