@@ -15,6 +15,14 @@ export default function QuilomboForte() {
     "/structure/quilomboForte/videoQF.mp4",
     "/structure/quilomboForte/sobre2.jpg",
   ];
+  const atividades = {
+    culturais: "/structure/quilomboForte/culturais.mp4",
+    danca: "/structure/quilomboForte/danca.mp4",
+    maculele: "/structure/quilomboForte/maculele.mp4",
+    pintura:"/structure/quilomboForte/pintura.mp4",
+    plantando:"/structure/quilomboForte/plantando.mp4",
+    pronunciamento:"/structure/quilomboForte/pronunciamentoMae.mp4"
+  }
   return (
     <>
       <main id="inicio">
@@ -127,7 +135,7 @@ export default function QuilomboForte() {
             <div className="hidden md:flex flex-col items-end space-y-6 w-1/2 xl:w-2/5">
               <video
                 controls
-                className="w-full lg:w-3/5 rounded-md hover:scale-105 transition-transform duration-300 ease-in-out object-cover"
+                className="w-4/5 lg:w-3/5 rounded-md hover:scale-105 transition-transform duration-300 ease-in-out object-cover"
               >
                 <source src={imagens[0]} type="video/mp4" />
                 Seu navegador não suporta o elemento de vídeo.
@@ -204,17 +212,34 @@ export default function QuilomboForte() {
                 comunidade;
               </p>
             </BoxValues>
+
             <BoxValues bg={true}>
               <p className="text-secundary-4 w-4/5 mx-auto my-1">
                 Realizar oficinas de expressões da cultura afro-brasileiras,
                 popular e/ou de matriz africana com crianças e adolescentes.
               </p>
             </BoxValues>
+
             <BoxValues bg={true}>
               <p className="text-secundary-4 w-4/5 mx-auto my-1">
                 Realizar visitas pedagógicas espaços culturais e educacionais.
               </p>
             </BoxValues>
+          </div>
+
+          <div className="flex flex-col md:grid md:grid-cols-4 gap-4 md:gap-3 text-base font-semibold ">
+            <video controls className="w-full  rounded-lg">
+              <source src={atividades.maculele} type="video/mp4" />
+              Seu navegador não suporta o elemento de vídeo.
+            </video>
+            <video controls className="w-full  rounded-lg">
+              <source src={atividades.danca} type="video/mp4" />
+              Seu navegador não suporta o elemento de vídeo.
+            </video>
+            <video controls className="w-full  rounded-lg">
+              <source src={atividades.culturais} type="video/mp4" />
+              Seu navegador não suporta o elemento de vídeo.
+            </video>
           </div>
 
           <p className="text-terciary-2 md:w-3/5 md:text-lg text-center">
@@ -223,26 +248,38 @@ export default function QuilomboForte() {
             Estatuto da Criança e do Adolescente.
           </p>
           <div className="flex flex-col md:grid md:grid-cols-3 gap-4 md:gap-3 text-base font-semibold ">
-            <BoxValues bg={true}>
-              <p className="text-secundary-4">
-                Realizar roda de diálogos sobre os direitos fundamentais e
-                Sistema de Garantia de Direitos da criança e do adolescente.
-              </p>
-            </BoxValues>
-            <BoxValues bg={true}>
-              <p className="text-secundary-4">
-                Proporcionar às crianças e adolescentes a participação em
-                atividades de lazer, esporte recreação e vivência das
-                manifestações culturais (Dia da Consciência Negra, Dia da Mulher
-                Negra Latino-Americana e Caribenha e ciclos culturais diversos).
-              </p>
-            </BoxValues>
-            <BoxValues bg={true}>
-              <p className="text-secundary-4">
-                Estimular a participação das crianças e adolescentes nos espaços
-                de mobilização e de controle social do município.
-              </p>
-            </BoxValues>
+              <BoxValues bg={true}>
+                <p className="text-secundary-4">
+                  Realizar roda de diálogos sobre os direitos fundamentais e
+                  Sistema de Garantia de Direitos da criança e do adolescente.
+                </p>
+              </BoxValues>
+              <BoxValues bg={true}>
+                <p className="text-secundary-4">
+                  Proporcionar às crianças e adolescentes a participação em
+                  atividades de lazer, esporte recreação e vivência das
+                  manifestações culturais (Dia da Consciência Negra, Dia da
+                  Mulher Negra Latino-Americana e Caribenha e ciclos culturais
+                  diversos).
+                </p>
+              </BoxValues>
+              <BoxValues bg={true}>
+                <p className="text-secundary-4">
+                  Estimular a participação das crianças e adolescentes nos
+                  espaços de mobilização e de controle social do município.
+                </p>
+              </BoxValues>
+          </div>
+
+          <div className="flex flex-col md:grid md:grid-cols-4 gap-4 md:gap-3 text-base font-semibold ">
+            <video controls className="w-full  rounded-lg">
+              <source src={atividades.pintura} type="video/mp4" />
+              Seu navegador não suporta o elemento de vídeo.
+            </video>
+            <video controls className="w-full  rounded-lg">
+              <source src={atividades.pronunciamento} type="video/mp4" />
+              Seu navegador não suporta o elemento de vídeo.
+            </video>
           </div>
 
           <p className="text-terciary-2 md:w-3/5 md:text-lg text-center">
@@ -252,13 +289,13 @@ export default function QuilomboForte() {
             familiares/responsáveis na comunidade.
           </p>
           <div className="flex flex-col md:grid md:grid-cols-4 gap-4 md:gap-3 text-base font-semibold ">
-            <BoxValues bg={true}>
-              <p className="text-secundary-4">
-                Realizar formação voltada para o empoderamento feminino, e a
-                geração de renda baseada em atividades ligadas à cultura
-                afro-brasileira e a estética negra.
-              </p>
-            </BoxValues>
+              <BoxValues bg={true}>
+                <p className="text-secundary-4">
+                  Realizar formação voltada para o empoderamento feminino, e a
+                  geração de renda baseada em atividades ligadas à cultura
+                  afro-brasileira e a estética negra.
+                </p>
+              </BoxValues>
             <BoxValues bg={true}>
               <p className="text-secundary-4">
                 Realizar reuniões e vivências temáticas com as famílias (raça,
@@ -277,6 +314,13 @@ export default function QuilomboForte() {
                 e cultura camponesa
               </p>
             </BoxValues>
+          </div>
+
+          <div className="flex flex-col md:grid md:grid-cols-4 gap-4 md:gap-3 text-base font-semibold ">
+            <video controls className="w-full  rounded-lg">
+              <source src={atividades.plantando} type="video/mp4" />
+              Seu navegador não suporta o elemento de vídeo.
+            </video>
           </div>
         </section>
 
