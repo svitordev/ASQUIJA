@@ -1,5 +1,10 @@
 export const news = [
   {
+    title: "✊🏿 Semana da Consciência Negra em Brejinhos!    Cultura, arte e resistência no Quilombo Fest 2025.    Vem celebrar com a gente! 💛",
+    srcImg: "/news/semanaConsNegra.png",
+    link: "https://www.instagram.com/p/DROBzSSAFm2/?img_index=1",
+  },
+  {
     title: "📚📣✨ 26 de maio, damos início ao Projeto Quilombo Forte!",
     srcImg: "/news/quilomboForte2.jpg",
     link: "https://www.instagram.com/p/DKIjcfGgNs7/",
