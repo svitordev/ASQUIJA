@@ -13,7 +13,7 @@ export const Socials = () => {
         <FaFacebook />
       </a>
       <a
-        href="https://www.instagram.com/associacaoquilombolaa/"
+        href="https://www.instagram.com/asquija"
         target="_blank"
         rel="noopener noreferrer"
         className="hover:scale-110"

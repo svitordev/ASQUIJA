@@ -165,7 +165,7 @@ export default function Home() {
                   <FaFacebook />
                 </a>
                 <a
-                  href="https://www.instagram.com/associacaoquilombolaa/"
+                  href="https://www.instagram.com/asquija"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:scale-105 hover:text-primary-1"

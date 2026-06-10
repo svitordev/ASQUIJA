@@ -5,29 +5,9 @@ import { FiTarget } from "react-icons/fi";
 import { Events } from "./groupEvent";
 import Image from "next/image";
 
-export const SectionEvent = () => {
+export const SectionEvent = ({imagens, title}) => {
   const isVideo = (src) => {
     return /\.(mp4|webm|ogg)$/i.test(src);
-  };
-
-  const cineCaixa = {
-    first: [
-      "/events/cineCaixa25/r1.jpg",
-      "/events/cineCaixa25/c1.mp4",
-      "/events/cineCaixa25/r2.jpg",
-    ],
-    second: [
-      "/events/cineCaixa25/c2.mp4",
-      "/events/cineCaixa25/r3.jpg",
-      "/events/cineCaixa25/q2.mp4",
-    ],
-    third: [
-      "/events/cineCaixa25/r4.jpg",
-      "/events/cineCaixa25/q1.jpg",
-      "/events/cineCaixa25/c3.jpg",
-    ],
-    fourth: ["/events/cineCaixa25/c1.jpg", "/events/cineCaixa25/c4.jpg"],
-    alt: "",
   };
   return (
     <section
@@ -41,11 +21,10 @@ export const SectionEvent = () => {
         </Tag>
       </div>
       <div className="space-y-4">
-        <Events title={"Cine CAIXA CAP  – Capitalização"}>
-
+        <Events title={title}>
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
             <div className="grid gap-2.5">
-              {cineCaixa.first.map((media, index) => (
+              {imagens.first?.map((media, index) => (
                 <div key={index}>
                   {isVideo(media) ? (
                     <video
@@ -58,7 +37,7 @@ export const SectionEvent = () => {
                   ) : (
                     <Image
                       src={media}
-                      alt={cineCaixa.alt || ""}
+                      alt={imagens.alt || ""}
                       width={1000}
                       height={100}
                       quality={100}
@@ -70,7 +49,7 @@ export const SectionEvent = () => {
             </div>
 
             <div className="grid gap-8">
-              {cineCaixa.second.map((media, index) => (
+              {imagens.second?.map((media, index) => (
                 <div key={index}>
                   {isVideo(media) ? (
                     <video
@@ -83,7 +62,7 @@ export const SectionEvent = () => {
                   ) : (
                     <Image
                       src={media}
-                      alt={cineCaixa.alt || ""}
+                      alt={imagens.alt || ""}
                       width={1000}
                       height={100}
                       quality={100}
@@ -95,7 +74,7 @@ export const SectionEvent = () => {
             </div>
 
             <div className="grid gap-6">
-              {cineCaixa.third.map((media, index) => (
+              {imagens.third?.map((media, index) => (
                 <div key={index}>
                   {isVideo(media) ? (
                     <video
@@ -108,7 +87,7 @@ export const SectionEvent = () => {
                   ) : (
                     <Image
                       src={media}
-                      alt={cineCaixa.alt || ""}
+                      alt={imagens.alt || ""}
                       width={1000}
                       height={100}
                       quality={100}
@@ -120,7 +99,7 @@ export const SectionEvent = () => {
             </div>
 
             <div className="grid gap-12">
-              {cineCaixa.fourth.map((media, index) => (
+              {imagens.fourth?.map((media, index) => (
                 <div key={index}>
                   {isVideo(media) ? (
                     <video
@@ -133,7 +112,7 @@ export const SectionEvent = () => {
                   ) : (
                     <Image
                       src={media}
-                      alt={cineCaixa.alt || ""}
+                      alt={imagens.alt || ""}
                       width={1000}
                       height={100}
                       quality={100}
@@ -144,7 +123,6 @@ export const SectionEvent = () => {
               ))}
             </div>
           </div>
-
         </Events>
       </div>
     </section>

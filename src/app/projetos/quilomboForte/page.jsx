@@ -8,7 +8,7 @@ import { FiTarget } from "react-icons/fi";
 import { BoxImpact } from "./boxImpact";
 import { Footer } from "@/components/Footer";
 import React from "react";
-import { SectionEvent } from "./events";
+import { SectionEvent } from "@/components/events";
 
 export default function QuilomboForte() {
   const imagens = [
@@ -19,10 +19,29 @@ export default function QuilomboForte() {
     culturais: "/structure/quilomboForte/culturais.mp4",
     danca: "/structure/quilomboForte/danca.mp4",
     maculele: "/structure/quilomboForte/maculele.mp4",
-    pintura:"/structure/quilomboForte/pintura.mp4",
-    plantando:"/structure/quilomboForte/plantando.mp4",
-    pronunciamento:"/structure/quilomboForte/pronunciamentoMae.mp4"
-  }
+    pintura: "/structure/quilomboForte/pintura.mp4",
+    plantando: "/structure/quilomboForte/plantando.mp4",
+    pronunciamento: "/structure/quilomboForte/pronunciamentoMae.mp4",
+  };
+  const cineCaixa = {
+    first: [
+      "/events/cineCaixa25/r1.jpg",
+      "/events/cineCaixa25/c1.mp4",
+      "/events/cineCaixa25/r2.jpg",
+    ],
+    second: [
+      "/events/cineCaixa25/c2.mp4",
+      "/events/cineCaixa25/r3.jpg",
+      "/events/cineCaixa25/q2.mp4",
+    ],
+    third: [
+      "/events/cineCaixa25/r4.jpg",
+      "/events/cineCaixa25/q1.jpg",
+      "/events/cineCaixa25/c3.jpg",
+    ],
+    fourth: ["/events/cineCaixa25/c1.jpg", "/events/cineCaixa25/c4.jpg"],
+    alt: "",
+  };
   return (
     <>
       <main id="inicio">
@@ -186,7 +205,7 @@ export default function QuilomboForte() {
           </div>
         </section>
 
-        <SectionEvent />
+          <SectionEvent  imagens={cineCaixa} title={"Cine CAIXA CAP  – Capitalização"}/>
 
         <section
           id="atividades"
@@ -248,27 +267,26 @@ export default function QuilomboForte() {
             Estatuto da Criança e do Adolescente.
           </p>
           <div className="flex flex-col md:grid md:grid-cols-3 gap-4 md:gap-3 text-base font-semibold ">
-              <BoxValues bg={true}>
-                <p className="text-secundary-4">
-                  Realizar roda de diálogos sobre os direitos fundamentais e
-                  Sistema de Garantia de Direitos da criança e do adolescente.
-                </p>
-              </BoxValues>
-              <BoxValues bg={true}>
-                <p className="text-secundary-4">
-                  Proporcionar às crianças e adolescentes a participação em
-                  atividades de lazer, esporte recreação e vivência das
-                  manifestações culturais (Dia da Consciência Negra, Dia da
-                  Mulher Negra Latino-Americana e Caribenha e ciclos culturais
-                  diversos).
-                </p>
-              </BoxValues>
-              <BoxValues bg={true}>
-                <p className="text-secundary-4">
-                  Estimular a participação das crianças e adolescentes nos
-                  espaços de mobilização e de controle social do município.
-                </p>
-              </BoxValues>
+            <BoxValues bg={true}>
+              <p className="text-secundary-4">
+                Realizar roda de diálogos sobre os direitos fundamentais e
+                Sistema de Garantia de Direitos da criança e do adolescente.
+              </p>
+            </BoxValues>
+            <BoxValues bg={true}>
+              <p className="text-secundary-4">
+                Proporcionar às crianças e adolescentes a participação em
+                atividades de lazer, esporte recreação e vivência das
+                manifestações culturais (Dia da Consciência Negra, Dia da Mulher
+                Negra Latino-Americana e Caribenha e ciclos culturais diversos).
+              </p>
+            </BoxValues>
+            <BoxValues bg={true}>
+              <p className="text-secundary-4">
+                Estimular a participação das crianças e adolescentes nos espaços
+                de mobilização e de controle social do município.
+              </p>
+            </BoxValues>
           </div>
 
           <div className="flex flex-col md:grid md:grid-cols-4 gap-4 md:gap-3 text-base font-semibold ">
@@ -289,13 +307,13 @@ export default function QuilomboForte() {
             familiares/responsáveis na comunidade.
           </p>
           <div className="flex flex-col md:grid md:grid-cols-4 gap-4 md:gap-3 text-base font-semibold ">
-              <BoxValues bg={true}>
-                <p className="text-secundary-4">
-                  Realizar formação voltada para o empoderamento feminino, e a
-                  geração de renda baseada em atividades ligadas à cultura
-                  afro-brasileira e a estética negra.
-                </p>
-              </BoxValues>
+            <BoxValues bg={true}>
+              <p className="text-secundary-4">
+                Realizar formação voltada para o empoderamento feminino, e a
+                geração de renda baseada em atividades ligadas à cultura
+                afro-brasileira e a estética negra.
+              </p>
+            </BoxValues>
             <BoxValues bg={true}>
               <p className="text-secundary-4">
                 Realizar reuniões e vivências temáticas com as famílias (raça,
