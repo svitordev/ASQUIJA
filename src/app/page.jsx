@@ -7,6 +7,7 @@ import { Title } from "@/components/Title";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa6";
+import { news } from "@/data/news";
 
 export default function Home() {
   return (
@@ -112,7 +113,7 @@ export default function Home() {
               link="/projetos/quilomboForte"
             />
             <Projects
-              srcImg="/structure/dandara/logoDandara.png" 
+              srcImg="/structure/dandara/logoDandara.png"
               title={
                 <>
                   Grupo Dandara <br /> de Brejinhos
@@ -135,22 +136,23 @@ export default function Home() {
               }
               link=""
             />
-            
           </div>
         </section>
 
-        <section
-          id="news"
-          className="space-y-10 py-12"
-        > 
-        <div className="px-4 lg:px-12 xl:px-24 2xl:px-32 3xl:px-56">
-          <Title>Notícias</Title>
-        </div>
-        
-          <div className="w-full mx-0">
-           
-            <CarouselNews />
-          </div>
+        <section id="news" className="space-y-10 py-12">
+          {news.length !== 0 ? (
+            <>
+              <div className="px-4 lg:px-12 xl:px-24 2xl:px-32 3xl:px-56">
+                <Title>Notícias</Title>
+              </div>
+
+              <div className="w-full mx-0">
+                <CarouselNews news={news} />
+              </div>
+            </>
+          ) : (
+            ""
+          )}
 
           {/* <div className="w-full md:w-1/3 2xl:w-2/5 space-y-10">
             <Title center={true}>Redes Sociais</Title>

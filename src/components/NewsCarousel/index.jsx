@@ -1,8 +1,7 @@
 'use client';
 import { Carousel } from "@material-tailwind/react";
 import { News } from "./news";
-import { news } from "@/data/news";
-export const CarouselNews = () => {
+export const CarouselNews = ({news}) => {
     
 
   return (
