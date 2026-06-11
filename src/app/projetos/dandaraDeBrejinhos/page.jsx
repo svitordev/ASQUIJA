@@ -11,7 +11,7 @@ import { LinkInsta } from "./linkInsta";
 
 export default function DandaraBrejinhos() {
   const imagens = [
-    "/structure/dandara/imagem1.png",
+    "/structure/dandara/imagem1.jpeg",
     "/structure/dandara/imagem2.png",
   ];
   return (
