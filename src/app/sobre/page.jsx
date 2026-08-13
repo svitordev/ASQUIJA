@@ -22,11 +22,11 @@ export default function About() {
       src: "/structure/team/GenilsonFundador.jpg",
     },
     {
-      name: "Missilene Santana",
+      name: "Maria Aparecida",
       role: "Presidenta",
-      src: "/structure/team/PreMisselene.jpg",
+      src: "/structure/team/PreAparecida.jpeg",
     },
-    {
+    /*{
       name: "Maria Martins",
       role: "Diretora Financeira",
       src: "/structure/team/noUser.png",
@@ -35,7 +35,7 @@ export default function About() {
       name: "Ruan Santos",
       role: "Secretário Geral",
       src: "/structure/team/noUser.png",
-    },
+    },*/
   ];
   const imagens = [
     "/structure/asquija/sobre1.png",
