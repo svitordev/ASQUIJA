@@ -21,8 +21,8 @@ export default function Transparency() {
       src: "/structure/documents/regulamento-interno-asquija.pdf",
     },
     {
-      text: "Posse 2024",
-      src: "/structure/documents/posse-2024.pdf",
+      text: "Posse 2026",
+      src: "/structure/documents/posse.pdf",
     },
   ];
   return (
